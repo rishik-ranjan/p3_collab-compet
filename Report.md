@@ -66,7 +66,7 @@ We noticed that performing actor and critic network updates multiple times at a 
 In our approach we are doing 3 updates at a gap of 4 time steps.
 
 ## Plot of Rewards
-The model was able to solve the task in 2998 episodes
+The model was able to solve the task in 2998 episodes in the Udacity workspace with GPU environment enabled in around 50 minutes. Here is a plot of rewards for the agents trained in GPU mode.
 
 Environment solved in 2998 episodes!          Average Score: 0.505
 

@@ -66,9 +66,9 @@ We noticed that performing actor and critic network updates multiple times at a 
 In our approach we are doing 3 updates at a gap of 4 time steps.
 
 ## Plot of Rewards
-The model was able to solve the task in YYY episodes
+The model was able to solve the task in 2998 episodes
 
-Environment solved in XXX episodes!          Average Score: ZZZ
+Environment solved in 2998 episodes!          Average Score: 0.505
 
 ![picture](result.png)
 
@@ -77,6 +77,7 @@ Environment solved in XXX episodes!          Average Score: ZZZ
 - Try changing the hyperparameters using grid search to increase the speed of learning in the algorithm
 - Consider implementing other new approaches to solve this environment such as described [here][4]
 - We noticed that one agent learnt for a long time before the other agent started learning. We could try taking inputs from the benchmark implementation such as training through self play, using a single actor network for both agents and employing a shared replay buffer.  
+- Seed to the algorithm can also have an impact on learning as described [here][3]. We should try different seeds to the problem. This would ensure our hyperparameters are robust enough to handle different initializations. 
 
 
 [1]: https://arxiv.org/pdf/1706.02275.pdf
